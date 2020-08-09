@@ -38,7 +38,7 @@ namespace Aciertagol.Web
                 cfg.UseSqlServer(Configuration.GetConnectionString("AciertagolConnection"));
             });
 
-
+            services.AddTransient<SeedDb>();
             services.AddScoped<IImageHelper, ImageHelper>();
             services.AddScoped<IConverterHelper, ConverterHelper>();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
