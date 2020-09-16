@@ -8,6 +8,7 @@ using System;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
+
 namespace Aciertagol.Web.Controllers
 {
     public class TeamsController : Controller
@@ -16,7 +17,7 @@ namespace Aciertagol.Web.Controllers
         private readonly IImageHelper _imageHelpers;
         private readonly IConverterHelper _converterHelper;
         private TeamViewModel teamViewModel;
-        private object teamEntity;
+        private object TeamEntity;
 
         public TeamsController(
             DataContext context,
