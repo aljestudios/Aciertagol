@@ -11,6 +11,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Aciertagol.Common\Aciertagol.Common.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Update="Views\Tournaments\EditGroupDetail.cshtml">
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>

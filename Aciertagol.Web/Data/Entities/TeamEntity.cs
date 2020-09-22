@@ -1,4 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Soccer.Web.Data.Entities;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace Aciertagol.Web.Data.Entities
 {
@@ -13,5 +15,7 @@ namespace Aciertagol.Web.Data.Entities
         [Display(Name="logo")]
 
         public string LogoPath { get; set; }
+
+        public ICollection<UserEntity> Users { get; set; }
     }
 }
