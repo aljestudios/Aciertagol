@@ -2,6 +2,7 @@
 using Aciertagol.Web.Data.Entities;
 using Aciertagol.Web.Helpers;
 using Aciertagol.Web.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Soccer.Web.Data.Entities;
@@ -13,6 +14,7 @@ using System.Threading.Tasks;
 
 namespace Aciertagol.Web.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class TournamentsController : Controller
     {
         private readonly IConverterHelper _converterHelper;
